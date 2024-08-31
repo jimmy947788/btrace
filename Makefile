@@ -25,9 +25,9 @@ build: tidy
 	$(GO_BUILD) -o out/$(BINARY_NAME)_$(TARGET)
 
 clean:
-	rm -f $(BPF_OUTPUT)_$(TARGET)_bpfel.go $(BPF_OUTPUT)_$(TARGET)_bpfel.o $(BINARY_NAME)_$(TARGET)
+	rm -f $(BPF_OUTPUT)_$(TARGET)_bpfel.go $(BPF_OUTPUT)_$(TARGET)_bpfel.o out/$(BINARY_NAME)_$(TARGET)
 
 info:
-	file $(BINARY_NAME)_$(TARGET)
+	file  out/$(BINARY_NAME)_$(TARGET)
 
 .PHONY: all bpf tidy build clean
