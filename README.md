@@ -10,11 +10,12 @@ btrace：binder_transaction+eBPF+Golang实现通用的Android APP动态行为追
 
 ARM64的Linux环境中，需要先安装Golang开发环境，然后：
 
+```shell
 git clone https://github.com/null-luo/btrace.git
-
 cd btrace
-
-make
+make # 编译btrace 預設為arm64 架構
+make TARGET=amd64 # 编译btrace为amd64 架構
+```
 
 ![1717907826094](image/README/1717907826094.png)
 

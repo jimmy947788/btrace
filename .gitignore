@@ -1,0 +1,51 @@
+# Binaries for programs and plugins
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Test binary, build artifacts
+*.test
+*.out
+
+# Output of the go coverage tool
+*.cov
+
+# Go modules
+go.mod
+go.sum
+
+# Dependency directories (remove the comment below if you use vendoring)
+# /vendor/
+
+# Go workspace file
+*.code-workspace
+
+# Go build cache
+/tmp/
+
+# Go specific cache files
+/.cache/
+/.cgo/
+/*.a
+
+# IDE/Editor directories and files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+*~
+
+# macOS specific
+.DS_Store
+
+# Node.js files (if using a frontend in the same repo)
+node_modules/
+
+# Generated files
+out/
+gen/
+
+bpf_*_bpfel.*
+
