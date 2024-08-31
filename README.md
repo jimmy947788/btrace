@@ -23,11 +23,24 @@ make TARGET=amd64 # 编译btrace为amd64 架構
 
 真机或者ARM模拟器都可以：
 
-adb push btrace /data/local/tmp
+1. 推送到手機
+```shell
+adb push out/btrace_arm64 /data/local/tmp/btrace
 
+```
+
+2. 進入手機 & root權限
+```shell
+adb shell
+su
+```
+
+2. 执行btrace
+```shell
+cd /data/local/tmp
 chmod +x btrace
-
 ./btrace
+```
 
 ![1717908085506](image/README/1717908085506.png)
 
